@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <title>Retrobot</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Retrobot</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mi</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio">
+    </section>
+    <section id="sobre-mi">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2>Sobre mi</h2>
+                <p>Mi nombre es Carlos Ledesma, soy profesor de Matematicas y en mis tiempos libres me dedico a hacer 
+                    estos Rebot totalmente artesanal con carton y pintados a mano. 
+                    Me apacionan mucho dado que siempre mire este contenido desde niño.
+                </p>    
+            </div>
+              <div class="col">
+                <img src="1.jpeg" class="img-fluid" alt=" ">
+              </div>
+            </div>
+            
+           
+    </section>
+    <section id="contacto">
+        <h1 id="richar"><u>Formulario de contacto</u></h1>
+            <h2>Escríbenos y en breve los pondremos en contacto contigo</h2>
+            <form action="https://formspree.io/f/mgejrllv"
+            method="POST" class="formulario-item" action="" method="post">
+
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="input-form" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="input-form" type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+
+                <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input class="input-form" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea  name="introducir_mensaje" class="textarea-form texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+
+                <button class="button-form" type="submit" name="enviar_formulario" id="enviar">
+                    <h4>Enviar</h4>
+                </button>
+            </form>
+    </section>
+    <footer>
+        <p>Derechos de Autor &copy; 2023 - Retrobot</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
